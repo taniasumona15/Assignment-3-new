@@ -1,139 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-<!--google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1aee7c6036.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- tailwind css & daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
- <!-- font awesome -->
- <script src="https://kit.fontawesome.com/1aee7c6036.js" crossorigin="anonymous"></script>
-
-<!-- tailwind css & daisyUI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="shortcut icon" href="assets/residential.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/residential.png"
+      type="image/x-icon"
+    />
     <title>Interios</title>
 
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary': '#ABEF5F',
-                'secondary': 'rgba(171, 239, 95, 0.5)',
-                'lightest': 'rgba(171, 239, 95, 0.2)',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+              secondary: "rgba(171, 239, 95, 0.5)",
+              lightest: "rgba(171, 239, 95, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
 
-<style>
-    .font-manrope{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
-
-</head>
-<body class="font-manrope">
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
     <header class="">
+      <div class="navbar p-4">
+        <div class="navbar-start">
+          <div class="flex items-center gap-3">
+            <div class="bg-primary rounded-full p-2 flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
 
-        <div class="navbar p-4">
-            <div class="navbar-start">
-                <div class="flex items-center gap-3">
-                    <div class="bg-primary rounded-full p-2 flex items-center">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-black">
-                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                       </svg>
-                    </div>
-                       
-                     <a class="text-3xl font-extrabold">Interios</a>
-                 
-                 </div>    
-             
+            <a class="text-3xl font-extrabold">Interios</a>
+          </div>
         </div>
-      
-            <div class="navbar-center hidden lg:flex text-[#737373]">
-              <ul class="menu menu-horizontal px-1">
-               <li class="active font-bold text-gray-700 hover:bg-primary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"><a href="">Home</a></li>
-               <li class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"><a href="">Services</a></li>
-               <li class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"><a href="">Portfolio</a></li>
-               <li class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"><a href="">Blogs</a></li>
-               <li class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"><a href="">Contact Us</a></li>
-               
-               
-               
-              </ul>
-            </div>
-          <div class="navbar-end">
-            <div class="hidden lg:flex lg:items-center gap-4">
 
-
-                <div class="flex items-center bg- rounded-full shadow-md p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-[#737373]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
-                      
-                </div>
-             <div class="flex items-center bg- rounded-full shadow-md p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-[#737373]">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                  </svg>
-             </div>
-                  
-                
-              <a class="btn bg-primary hover:bg-secondary hover:border-none transition-colors duration-1000 ease-in-out text-[#1C1C1C] rounded-full font-extrabold text-[15px]">Book Consult <div class="bg-[#1C1C1C] rounded-full p-[6px] flex items-center]">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-              </div></a>
+        <div class="navbar-center hidden lg:flex text-[#737373]">
+          <ul class="menu menu-horizontal px-1">
+            <li
+              class="active font-bold text-gray-700 hover:bg-primary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"
+            >
+              <a href="">Home</a>
+            </li>
+            <li
+              class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"
+            >
+              <a href="">Services</a>
+            </li>
+            <li
+              class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"
+            >
+              <a href="">Portfolio</a>
+            </li>
+            <li
+              class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"
+            >
+              <a href="">Blogs</a>
+            </li>
+            <li
+              class="hover:bg-secondary hover:border-none transition-colors duration-400 ease-in-out rounded-lg"
+            >
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden lg:flex lg:items-center gap-4">
+            <div class="flex items-center bg- rounded-full shadow-md p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 text-[#737373]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
             </div>
-            <div class="dropdown lg:hidden">
-                <div tabindex="0" role="button" class="btn text-[#1C1C1C] rounded-full shadow-md hover:bg-primary hover:text-white hover:shadow-none hover: border-none lg:hidden">
-                    <i class="fa-solid fa-bars text-lg"></i>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Portfolio</a></li>
-                  <li><a href="">Blogs</a></li>
-                  <li><a href="">Contact Us</a></li>
-                  
-                  
-                </ul>
-              </div>
+            <div class="flex items-center bg- rounded-full shadow-md p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 text-[#737373]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </div>
+
+            <a
+              class="btn bg-primary hover:bg-secondary hover:border-none transition-colors duration-1000 ease-in-out text-[#1C1C1C] rounded-full font-extrabold text-[15px]"
+              >Book Consult
+              <div class="bg-[#1C1C1C] rounded-full p-[6px] flex items-center]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg></div
+            ></a>
           </div>
-          </div>
-
-          <div class="flex justify-center items-center  text-center flex-col mx-10">
-            <div>
-                <img  class="mx-auto w-9/12 lg:w-full mb-4" src="assets/banner.png" alt="">
+          <div class="dropdown lg:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn text-[#1C1C1C] rounded-full shadow-md hover:bg-primary hover:text-white hover:shadow-none hover: border-none lg:hidden"
+            >
+              <i class="fa-solid fa-bars text-lg"></i>
             </div>
-            <div>
-                <h1 class="text-[#1C1C1C] font-black text-2xl lg:text-6xl lg:leading-[70px]" >A barn house of this design has a <br>striking appearance</h1>
-                <p class="text-[#494949] text-md my-6 lg:w-9/12 mx-auto">A barn house is a building with a roof that is made of wood or brick or steel or other materials. Industrial items are used to construct the house. </p>
-                <a class="btn bg-secondary border-solid  border-1 border-primary hover:bg-lightest hover:border-none transition-colors duration-1000 ease-in-out text-[#1C1C1C] rounded-full font-extrabold text-[15px]">View Details<div class="bg-primary rounded-full p-[6px] flex items-center]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#1C1C1C]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                  </div></a>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
           </div>
+        </div>
+      </div>
 
-
-
+      <div class="flex justify-center items-center text-center flex-col mx-10">
+        <div>
+          <img
+            class="mx-auto w-9/12 lg:w-full mb-4"
+            src="assets/banner.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1
+            class="text-[#1C1C1C] font-black text-2xl lg:text-6xl lg:leading-[70px]"
+          >
+            A barn house of this design has a <br />striking appearance
+          </h1>
+          <p class="text-[#494949] text-md my-6 lg:w-9/12 mx-auto">
+            A barn house is a building with a roof that is made of wood or brick
+            or steel or other materials. Industrial items are used to construct
+            the house.
+          </p>
+          <a
+            class="btn bg-secondary border-solid border-1 border-primary hover:bg-lightest hover:border-none transition-colors duration-1000 ease-in-out text-[#1C1C1C] rounded-full font-extrabold text-[15px]"
+            >View Details
+            <div class="bg-primary rounded-full p-[6px] flex items-center]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-[#1C1C1C]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg></div
+          ></a>
+        </div>
+      </div>
     </header>
-    <main class="container mx-auto"></main>
+    <main class="container mx-auto">
+      <section class="bg-[#f4f4f4] mt-10 lg:px-12 py-8">
+        <div class="hidden lg:block">
+          <img src="assets/Vector.png" alt="" />
+        </div>
+
+        <div class="px-4 lg:px-12 py-8 flex justify-between flex-col lg:flex-row gap-10">
+          <div class="w-full lg:w-[50%] text-center lg:text-start">
+            <button class="btn bg-white rounded-full px-8 text-base hover:bg-primary hover:border-none mb-4"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+            <h2 class="text-[#1C1C1C] font-black text-[32px] lg:text-[40px] leading-[50px] mb-4">We design thoughtful, <br> liveable spaces</h2>
+            <p class="text-[#494949] w-[90%] mx-auto lg:mx-0 text-base mb-6">We design according to your choices. All your dreams can come true now. Show us your design to help us understand about your dream house.</p>
+            <div class="flex gap-4 items-start lg:items-center bg-white rounded-lg px-6 py-8 mb-4 text-start">
+                <img class="w-[30px] lg:w-auto" src="assets/commercial.png" alt="">
+                <div class="flex flex-col">
+                    <h4 class="text-[#494949] text-xl font-bold">Commercial</h4>
+                <p class="text-[#494949]">Commercial building can be designed according to your choices.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-start lg:items-center text-start bg-white rounded-lg px-6 py-8">
+                <img class="w-[30px] lg:w-auto" src="assets/residential.png" alt="">
+                <div>
+                    <h4 class="text-[#494949] text-xl font-bold">Residential</h4>
+                <p class="text-[#494949]">Residential building can be designed according to your choices.</p>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="w-full lg:w-[50%]"> 
+            <img class="w-full h-72 lg:h-full" src="assets/Rectangle.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
-    
-</body>
+  </body>
 </html>
